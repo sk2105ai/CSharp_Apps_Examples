@@ -10,6 +10,8 @@ namespace MVCWebApp.Controllers
     public class ParkSummaryController : Controller
     {
         // GET: Parks
+        /// <CreatedBy>Shahir Khan</CreatedBy>
+        /// <CreatedDate>May 02, 2025</CreatedDate>
         public ActionResult ParkSummary()
         {
             var viewModel = new ParkViewModel
@@ -38,6 +40,13 @@ namespace MVCWebApp.Controllers
             return View(viewModel);
         }
 
+        /// <summary>
+        /// Get Dropdown/Park data
+        /// </summary>
+        /// <param name="model">ParkViewModel</param>
+        /// <returns>ActionResult</returns>
+        /// <CreatedBy>Shahir Khan</CreatedBy>
+        /// <CreatedDate>May 02, 2025</CreatedDate>
         [HttpPost]
         public ActionResult Index(ParkViewModel model)
         {
@@ -63,6 +72,8 @@ namespace MVCWebApp.Controllers
         }
 
         // Ajax call to get states for a country
+        /// <CreatedBy>Shahir Khan</CreatedBy>
+        /// <CreatedDate>May 02, 2025</CreatedDate>
         [HttpGet]
         public JsonResult GetStates(string country)
         {
@@ -71,6 +82,8 @@ namespace MVCWebApp.Controllers
         }
 
         // Ajax call to get cities for a state
+        /// <CreatedBy>Shahir Khan</CreatedBy>
+        /// <CreatedDate>May 02, 2025</CreatedDate>
         [HttpGet]
         public JsonResult GetCities(string state)
         {
@@ -79,6 +92,8 @@ namespace MVCWebApp.Controllers
         }
 
         // Ajax call to reload park data with sorting and paging
+        /// <CreatedBy>Shahir Khan</CreatedBy>
+        /// <CreatedDate>May 02, 2025</CreatedDate>
         [HttpGet]
         public ActionResult GetParks(string country, string state, string city,
                                      string sortColumn, string sortOrder, int page, int pageSize)
