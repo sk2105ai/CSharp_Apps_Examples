@@ -1,0 +1,14 @@
+D:\shahir\workingFolder\Github_Public\OOPS_Example\OOPS_Example_Console_App\OOPS_Examples\bin\Debug\net8.0\OOPS_Examples.exe
+D:\shahir\workingFolder\Github_Public\OOPS_Example\OOPS_Example_Console_App\OOPS_Examples\bin\Debug\net8.0\OOPS_Examples.dll
+D:\shahir\workingFolder\Github_Public\OOPS_Example\OOPS_Example_Console_App\OOPS_Examples\obj\Debug\net8.0\OOPS_Examples.GeneratedMSBuildEditorConfig.editorconfig
+D:\shahir\workingFolder\Github_Public\OOPS_Example\OOPS_Example_Console_App\OOPS_Examples\obj\Debug\net8.0\OOPS_Examples.AssemblyInfoInputs.cache
+D:\shahir\workingFolder\Github_Public\OOPS_Example\OOPS_Example_Console_App\OOPS_Examples\obj\Debug\net8.0\OOPS_Examples.AssemblyInfo.cs
+D:\shahir\workingFolder\Github_Public\OOPS_Example\OOPS_Example_Console_App\OOPS_Examples\obj\Debug\net8.0\OOPS_Examples.csproj.CoreCompileInputs.cache
+D:\shahir\workingFolder\Github_Public\OOPS_Example\OOPS_Example_Console_App\OOPS_Examples\obj\Debug\net8.0\OOPS_Examples.dll
+D:\shahir\workingFolder\Github_Public\OOPS_Example\OOPS_Example_Console_App\OOPS_Examples\obj\Debug\net8.0\refint\OOPS_Examples.dll
+D:\shahir\workingFolder\Github_Public\OOPS_Example\OOPS_Example_Console_App\OOPS_Examples\obj\Debug\net8.0\OOPS_Examples.pdb
+D:\shahir\workingFolder\Github_Public\OOPS_Example\OOPS_Example_Console_App\OOPS_Examples\bin\Debug\net8.0\OOPS_Examples.deps.json
+D:\shahir\workingFolder\Github_Public\OOPS_Example\OOPS_Example_Console_App\OOPS_Examples\bin\Debug\net8.0\OOPS_Examples.runtimeconfig.json
+D:\shahir\workingFolder\Github_Public\OOPS_Example\OOPS_Example_Console_App\OOPS_Examples\bin\Debug\net8.0\OOPS_Examples.pdb
+D:\shahir\workingFolder\Github_Public\OOPS_Example\OOPS_Example_Console_App\OOPS_Examples\obj\Debug\net8.0\OOPS_Examples.genruntimeconfig.cache
+D:\shahir\workingFolder\Github_Public\OOPS_Example\OOPS_Example_Console_App\OOPS_Examples\obj\Debug\net8.0\ref\OOPS_Examples.dll
