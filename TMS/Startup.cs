@@ -1,4 +1,5 @@
 ﻿// Startup.cs
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -19,8 +20,18 @@ namespace TicketMonitoringSystem
 
         public void ConfigureServices(IServiceCollection services)
         {
+            // Add authentication
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+                .AddCookie(options =>
+                {
+                    options.LoginPath = "/Account/Login";
+                    options.AccessDeniedPath = "/Account/AccessDenied";
+                    options.ExpireTimeSpan = TimeSpan.FromDays(1);
+                    options.SlidingExpiration = true;
+                });
             services.AddControllersWithViews();
             services.AddSingleton<TicketService>();
+            services.AddSingleton<UserService>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -39,6 +50,8 @@ namespace TicketMonitoringSystem
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            app.UseAuthentication(); 
 
             app.UseAuthorization();
 

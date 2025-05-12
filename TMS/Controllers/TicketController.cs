@@ -5,9 +5,12 @@ using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using TicketMonitoringSystem.Models;
 using TicketMonitoringSystem.Services;
+using Microsoft.AspNetCore.Authorization;
+
 
 namespace TicketMonitoringSystem.Controllers
 {
+    [Authorize] // Require authentication for all actions added by Shahir Khan on May 12, 2025
     public class TicketController : Controller
     {
         private readonly TicketService _ticketService;
@@ -97,6 +100,10 @@ namespace TicketMonitoringSystem.Controllers
         /// <returns>IActionResult</returns>
         /// <CreatedBy>Shahir Khan</CreatedBy>
         /// <CreatedDate>May 11, 2025</CreatedDate>
+        /// <ModifiedBy>Shahir Khan</ModifiedBy>
+        /// <ModifiedDate>May 12,2025</ModifiedDate>
+        /// <remarks>Added explicit authorization (though inherited from class-level attribute)</remarks>
+        [Authorize] 
         public IActionResult Edit(string id)
         {
             if (string.IsNullOrEmpty(id))
@@ -113,6 +120,10 @@ namespace TicketMonitoringSystem.Controllers
             return View(ticket);
         }
 
+        /// <ModifiedBy>Shahir Khan</ModifiedBy>
+        /// <ModifiedDate>May 12,2025</ModifiedDate>
+        /// <remarks>Added explicit authorization (though inherited from class-level attribute)</remarks>
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Edit(Ticket ticket)
@@ -153,7 +164,7 @@ namespace TicketMonitoringSystem.Controllers
             return View(ticket);
         }
 
-        
+
         /// <summary>
         /// Delete ticket confirmation
         /// </summary>
@@ -161,6 +172,10 @@ namespace TicketMonitoringSystem.Controllers
         /// <returns>IActionResult</returns>
         /// <CreatedBy>Shahir Khan</CreatedBy>
         /// <CreatedDate>May 11, 2025</CreatedDate>
+        /// <ModifiedBy>Shahir Khan</ModifiedBy>
+        /// <ModifiedDate>May 12,2025</ModifiedDate>
+        /// <remarks>Added explicit authorization (though inherited from class-level attribute)</remarks>
+        [Authorize]
         public IActionResult Delete(string id)
         {
             if (string.IsNullOrEmpty(id))
