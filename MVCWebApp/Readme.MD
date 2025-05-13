@@ -1,1 +1,2 @@
-AI powered Park Finder application using MVC Code Webapp 
+This project is moved to below path:
+https://github.com/sk2105ai/ParkFinderApplication.git
